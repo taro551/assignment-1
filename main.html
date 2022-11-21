@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body id="main">
+   
+    
+        <header>
+            
+            <div class="brand">
+                <h1><a href=""> Sign in </a></h1>
+            </div>
+            <nav>
+                <ul>
+                    
+                    <div class="dropdown">
+                    <button class="dropbtn">Home</button>
+                    <div class ="dropdown-content">
+                        <a href="">Library home page</a>
+                        <a href="">Library dark home page</a>
+                    </div>
+                </div>
+
+              
+                <div class="dropdown">
+                    <button class="dropbtn">About us</button>
+                    <div class ="dropdown-content">
+                        <a href="">1</a>
+                        <a href="">2</a>
+                    </div>
+                </div>
+                    
+
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class ="dropdown-content">
+                        <a href="">E-library</a>
+                        <a href="">physical Library</a>
+                    </div>
+                </div>
+                
+
+                <div class="dropdown">
+                    <button class="dropbtn">users</button>
+                    <div class ="dropdown-content">
+                        <a href="">Students</a>
+                        <a href="">Faculty</a>
+                        <a href="">Staff</a>
+                        <a href="">Library Admin</a>
+                        <a href="">System Admin</a>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">Contact</button>
+                    <div class ="dropdown-content">
+                        <a href="">contact page</a>
+                     
+                    </div>
+                </div>
+                </ul>
+            </nav>
+            
+        </header>
+
+       
+   <center>
+<div class="image" style="width:1000px;height:0px;">
+    <img class="mySlides" src="slide1.jpg" style="width:100%">
+    <img class="mySlides" src="slide2.jpg" style="width:100%">
+    <img class="mySlides" src="slide3.jpg" style="width:100%">
+  </div>
+  
+
+
+
+  
+
+
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+  }
+  </script>
+
+
+</center> 
+
+
+</body>
+</html>
